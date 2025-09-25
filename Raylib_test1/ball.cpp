@@ -7,8 +7,11 @@ void Ball::Draw() {
 }
 
 void Ball::Update() {
-    if (IsKeyDown(KEY_RIGHT)) ballPosition.x += 2.0f;
-    if (IsKeyDown(KEY_LEFT)) ballPosition.x -= 2.0f;
-    if (IsKeyDown(KEY_UP)) ballPosition.y -= 2.0f;
-    if (IsKeyDown(KEY_DOWN)) ballPosition.y += 2.0f;
+    if (::IsKeyPressed(KEY_SPACE)) 
+    {
+        velocityY = -10.0f;
+    }
+
+    velocityY += 0.5f;
+    centerY += (int)velocityY;
 }

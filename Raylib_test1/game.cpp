@@ -13,10 +13,9 @@ void Game::loop()
 	{
 		::BeginDrawing();
 		ball.Draw();
+		ball.Update();
 		::ClearBackground(DARKGRAY);
 		::EndDrawing();
 	}
 	::CloseWindow();
 }
-
-		//::DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
