@@ -13,5 +13,5 @@ void Ball::Update() {
     }
 
     velocityY += 0.5f;
-    centerY += (int)velocityY;
+    centerY += (int)velocityY; /*(int) = type cast*/ 
 }

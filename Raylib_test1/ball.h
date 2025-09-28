@@ -6,14 +6,16 @@ class Ball
 protected:
 	int centerX = 400;
 	int centerY = 225;
+	
 	float radius = 25;
-	Color color = MAGENTA;
-
 	float velocityY = 0.0f;
+	float screenHeight = 450.0f;
+
+	Color color = MAGENTA;
 
 public:
 
-	Ball();
+	Ball(flo);
 	void Draw();
 	void Update();
 };
